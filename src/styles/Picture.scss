@@ -1,0 +1,67 @@
+.picture {
+    width: 280px;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .description {
+        padding: 20px 24px 24px 24px;
+
+        h2 {
+            font-family: Merriweather;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 150%;
+            margin-bottom: 22px;
+        }
+
+        .pictureBottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .cost {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 48px;
+                color: #343030;
+                font-weight: bold;
+                font-size: 16px;
+
+                .previousCost {
+                    color: #A0A0A0;
+                    text-decoration-line: line-through;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+
+            button {
+                width: 118px;
+                height: 48px;
+                color: #F4F6F9;
+                background: #382E2B;
+                border: none;
+            }
+        }
+
+        .soldOut{
+            height: 48px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 48px;
+        }
+    }
+}
+
+.pictureSoldOut{
+    img {
+        filter: grayscale(100%);
+    }
+
+    color: #a19f9f;
+}
